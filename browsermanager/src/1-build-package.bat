@@ -26,10 +26,6 @@ if exist "%BUILD_DIR%" (
 rem  Create package.
 call cpack "-OutputDirectory %BUILD_DIR%"
 
-rem  Test package (install form local source).
-cd %BUILD_DIR%
-call cinst %PACKAGE_NANE% -source %CD%
-
 pause
 
 @endlocal

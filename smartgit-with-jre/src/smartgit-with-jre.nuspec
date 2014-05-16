@@ -14,7 +14,6 @@
     <licenseUrl>http://www.syntevo.com/smartgithg/license.html</licenseUrl>
     <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/SmartGit/logo.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://raw.github.com/https://github.com/Claud/chocolatey-packages/master/smartgit-with-jre/smartgit-with-jre.png</iconUrl>-->
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
