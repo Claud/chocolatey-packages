@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>yandexdisk</id>
+    <title>Яндекс Диск</title>
+    <version>1.0.0</version>
+    <authors>yandex</authors>
+    <owners>Shirayev Andrey</owners>
+    <summary>Ваши файлы всегда с вами — на любом устройстве с интернетом</summary>
+    <description>Яндекс.Диск — облачный сервис, принадлежащий компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.</description>
+    <projectUrl>https://disk.yandex.ru</projectUrl>
+    <tags>yandexdisk, file storage, backup</tags>
+    <copyright>yandex.ru</copyright>
+    <licenseUrl>http://legal.yandex.ru/desktop_software_agreement/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://raw.github.com/https://github.com/Claud/chocolatey-packages/master/yandexdisk/yandexdisk.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

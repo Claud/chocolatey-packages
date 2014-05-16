@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>smartgit-with-jre</id>
+    <title>SmartGit/Hg (with JRE)</title>
+    <version>5.0.9</version>
+    <authors>syntevo</authors>
+    <owners>Shirayev Andrey</owners>
+    <summary>SmartGit/Hg</summary>
+    <description>SmartGit/Hg is a client for Git and Mercurial.</description>
+    <projectUrl>http://www.syntevo.com/smartgit/</projectUrl>
+    <tags>smartgit git github hg mercurial dvcs</tags>
+    <copyright>syntevo GmbH</copyright>
+    <licenseUrl>http://www.syntevo.com/smartgithg/license.html</licenseUrl>
+    <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/SmartGit/logo.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://raw.github.com/https://github.com/Claud/chocolatey-packages/master/smartgit-with-jre/smartgit-with-jre.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
