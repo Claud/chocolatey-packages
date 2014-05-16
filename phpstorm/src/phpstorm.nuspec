@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>phpstorm</id>
-    <title>phpstorm</title>
+    <title>PhpStorm</title>
     <version>7.1.3</version>
     <authors>JetBrains</authors>
     <owners>Shirayev Andrey</owners>
-    <summary>phpstorm</summary>
+    <summary>PhpStorm</summary>
     <description>phpstorm</description>
-    <projectUrl>__REPLACE__</projectUrl>
-    <tags>phpstorm admin</tags>
+    <projectUrl>http://www.jetbrains.com/phpstorm/</projectUrl>
+    <tags>phpstorm php work</tags>
     <copyright></copyright>
-    <licenseUrl>www.jetbrains.com/phpstorm/buy/buy.jsp</licenseUrl>
+    <licenseUrl>http://www.jetbrains.com/phpstorm/buy/buy.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <!--<iconUrl>https://raw.github.com/https://github.com/Claud/chocolatey-packages/master/phpstorm/phpstorm.png</iconUrl>-->
+    <iconUrl>https://raw.github.com/Claud/chocolatey-packages/master/phpstorm/src/phpstorm.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
