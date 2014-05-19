@@ -4,7 +4,7 @@ rem -------------------------------------------------------------
 rem  Build package for chocolatey.
 rem -------------------------------------------------------------
 
-@setlocal
+@SetLocal EnableExtensions EnableDelayedExpansion
 
 rem  Get package name.
 cd ..\
@@ -26,6 +26,8 @@ if exist "%BUILD_DIR%" (
 rem  Create package.
 call cpack "-OutputDirectory %BUILD_DIR%"
 
-pause
+if not "%1" == "1" (
+	pause
+)
 
 @endlocal

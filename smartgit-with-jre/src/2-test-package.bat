@@ -4,7 +4,7 @@ rem -------------------------------------------------------------
 rem  Build package for chocolatey.
 rem -------------------------------------------------------------
 
-@setlocal
+@SetLocal EnableExtensions EnableDelayedExpansion
 
 rem  Get package name.
 cd ..\
@@ -20,6 +20,8 @@ set "BUILD_DIR=..\build\%PACKAGE_NANE%"
 cd %BUILD_DIR%
 call cinst %PACKAGE_NANE% -source %CD%
 
-pause
+if not "%1" == "1" (
+	pause
+)
 
 @endlocal

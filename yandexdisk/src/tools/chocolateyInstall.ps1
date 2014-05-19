@@ -2,12 +2,32 @@
 
 $packageName = 'yandexdisk' # arbitrary name for the package, used in messages
 $installerType = 'exe' #only one of these: exe, msi, msu
-$url = 'https://downloader.disk.yandex.ru/share/26833500ea129074ec8998a52fab7c64/5375fa55/qj7-HmnYJR-X8WCmW5r6Z2972K5FexFNUae-LGyLpCzf_m0pmy5NOdO0O7P-IzufxKJzGjZaXHe6p7uDI8xWcA%3D%3D?uid=0&filename=YandexDiskSetupRu.exe&disposition=attachment&hash=&limit=0&content_type=application%2Fx-msdownload&fsize=1002272&hid=0a355dc4ffd98c48b6fd5325db8c7f0c&media_type=executable' # download url
+$url = 'http://disk.yandex.ru/download/YandexDiskSetupPack.exe/' # download url
 $silentArgs = '/silent' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
-# main helpers - these have error handling tucked into them already
-# installer, will assert administrative rights
-# if removing $url64, please remove from here
-Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$url" "$url64"  -validExitCodes $validExitCodes
-# download and unpack a zip file
+try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
+    $chocTempDir = Join-Path $env:TEMP "chocolatey"
+    $tempDir = Join-Path $chocTempDir "$packageName"
+    if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+	$indexFile = Join-Path $tempDir "$($packageName).html"
+	
+	Get-ChocolateyWebFile "$packageName" "$indexFile" "$url"
+	write-host "[$packageName] Trying to find a link to a '.exe' file."
+    $contentIndexFile = Get-Content "$indexFile"
+	$temp = $contentIndexFile -match '<a.*?href=\"(http[s]?://downloader\.disk.*?)\"'
+	if($matches[1]) {
+		write-host "[$packageName] Link is found."
+		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$matches[1]"  -validExitCodes $validExitCodes
+	} else {
+		write-host "[$packageName] Link is not found."
+		throw
+	}
+    
+    Remove-Item "$indexFile"
+    
+    Write-ChocolateySuccess "$packageName"
+} catch {
+    Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
+    throw
+}

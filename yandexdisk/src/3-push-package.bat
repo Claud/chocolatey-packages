@@ -4,7 +4,7 @@ rem -------------------------------------------------------------
 rem  Build package for chocolatey.
 rem -------------------------------------------------------------
 
-@setlocal
+@SetLocal EnableExtensions EnableDelayedExpansion
 
 rem  Get package name.
 cd ..\
@@ -21,6 +21,8 @@ cd %BUILD_DIR%
 
 call cpush %PACKAGE_NANE%.*.nupkg
 
-pause
+if not "%1" == "1" (
+	pause
+)
 
 @endlocal

@@ -7,15 +7,16 @@ $silentArgs = '/verysilent /norestart' # "/s /S /q /Q /quiet /silent /SILENT /VE
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
 try { #error handling is only necessary if you need to do anything in addition to/instead of the main helpers
-    $toolsDir = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
-    Install-ChocolateyZipPackage "$packageName" "$url" $toolsDir
-
-    $exeFilePath = get-childitem $toolsDir -recurse -include *.$installerType | select -First 1
+	$chocTempDir = Join-Path $env:TEMP "chocolatey"
+    $tempDir = Join-Path $chocTempDir "$packageName"
+	$tempDir = Join-Path $tempDir "unzip"
+    if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
+    
+	Install-ChocolateyZipPackage "$packageName" "$url" "$tempDir"
+    $exeFilePath = get-childitem $tempDir -recurse -include *.$installerType | select -First 1
     Install-ChocolateyInstallPackage "$packageName" "$installerType" "$silentArgs" "$exeFilePath"
     
-    $logFilePath = get-childitem $toolsDir -recurse -include *.txt | select -First 1
-    Remove-Item "$exeFilePath"
-    Remove-Item "$logFilePath"
+    Remove-Item "$tempDir" -Recurse
     
     Write-ChocolateySuccess "$packageName"
 } catch {
