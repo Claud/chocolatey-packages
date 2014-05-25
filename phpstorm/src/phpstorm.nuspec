@@ -2,15 +2,15 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>phpstorm</id>
-    <title>PhpStorm</title>
-    <version>7.1.3</version>
+    <title>JetBrains PhpStorm</title>
+    <version>7.1.3.1</version>
     <authors>JetBrains</authors>
     <owners>Shirayev Andrey</owners>
-    <summary>PhpStorm</summary>
-    <description>phpstorm</description>
+    <summary>PhpStorm — PHP IDE that goes beyond the language.</summary>
+    <description>PhpStorm keeps up with latest PHP and web languages trends, integrates a variety of modern tools, and brings even more extensibility with support for major PHP frameworks.</description>
     <projectUrl>http://www.jetbrains.com/phpstorm/</projectUrl>
-    <tags>phpstorm php work</tags>
-    <copyright></copyright>
+    <tags>php work IDE JetBrains</tags>
+    <copyright>JetBrains</copyright>
     <licenseUrl>http://www.jetbrains.com/phpstorm/buy/buy.jsp</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://raw.github.com/Claud/chocolatey-packages/master/phpstorm/src/phpstorm.png</iconUrl>
