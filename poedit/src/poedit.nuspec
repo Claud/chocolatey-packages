@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>poedit</id>
+    <title>Poedit</title>
+    <version>1.6.5</version>
+    <authors>Vaclav Slavik</authors>
+    <owners>Shirayev Andrey</owners>
+    <summary>Poedit offers the best way to translate apps and sites (that use gettext).</summary>
+    <description>Poedit offers the best way to translate apps and sites (that use gettext). Thanks to its distraction-free approach, you’ll translate faster and easier with it.</description>
+    <projectUrl>http://poedit.net/</projectUrl>
+    <tags>poedit gettext</tags>
+    <copyright>Vaclav Slavik</copyright>
+    <licenseUrl>https://github.com/vslavik/poedit/blob/master/COPYING</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>https://pbs.twimg.com/profile_images/457878756229926912/UrJvoT7L_bigger.jpeg</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
