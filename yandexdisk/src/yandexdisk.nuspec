@@ -2,12 +2,14 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>yandexdisk</id>
-    <title>Яндекс Диск</title>
-    <version>1.0.0.2</version>
+    <title>Yandex Disk</title>
+    <version>1.0.0.3</version>
     <authors>yandex</authors>
     <owners>Shirayev Andrey</owners>
-    <summary>Ваши файлы всегда с вами — на любом устройстве с интернетом</summary>
-    <description>Яндекс.Диск — облачный сервис, принадлежащий компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.</description>
+    <summary>Yandex.Disk is a cloud storage created by Yandex.</summary>
+    <description>Yandex.Disk is a cloud service created by Yandex that lets users store files on “cloud” servers and share them with others online. The service is based on syncing data between different devices.
+    Яндекс.Диск — облачный сервис, принадлежащий компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.
+    </description>
     <projectUrl>https://disk.yandex.ru</projectUrl>
     <tags>yandexdisk, file storage, backup</tags>
     <copyright>yandex.ru</copyright>
