@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>net-speed-monitor</id>
+    <title>NetSpeedMonitor</title>
+    <version>2.5.4.0</version>
+    <authors>Florian Gilles</authors>
+    <owners>Shirayev Andrey</owners>
+    <summary>net-speed-monitor</summary>
+    <description>net-speed-monitor</description>
+    <projectUrl>http://www.floriangilles.com/software/netspeedmonitor</projectUrl>
+    <tags>net-speed-monitor admin</tags>
+    <copyright>Florian Gilles</copyright>
+    <licenseUrl>http://www.floriangilles.com/software/netspeedmonitor/releasenotes/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <!--<iconUrl>https://raw.github.com/Claud/chocolatey-packages/master/net-speed-monitor/net-speed-monitor.png</iconUrl>-->
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes></releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
