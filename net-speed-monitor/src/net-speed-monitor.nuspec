@@ -6,8 +6,8 @@
     <version>2.5.4.0</version>
     <authors>Florian Gilles</authors>
     <owners>Shirayev Andrey</owners>
-    <summary>net-speed-monitor</summary>
-    <description>net-speed-monitor</description>
+    <summary>With NetSpeedMonitor you can monitor the current speed (up- and downstream) of your Network Interfaces and the amount of data transferred.</summary>
+    <description>With NetSpeedMonitor you can monitor the current speed (up- and downstream) of your Network Interfaces and the amount of data transferred. In addition to the Connection Table with all TCP/UDP endpoints and the Toolbar Tooltip with a quick and short traffic overview, you can also see detailed daily and monthly Traffic Statistics. NetSpeedMonitor toolbar requires no additional drivers like other Network Monitoring tools do!</description>
     <projectUrl>http://www.floriangilles.com/software/netspeedmonitor</projectUrl>
     <tags>net-speed-monitor admin</tags>
     <copyright>Florian Gilles</copyright>
