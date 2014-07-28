@@ -3,7 +3,7 @@
   <metadata>
     <id>yandexdisk</id>
     <title>Yandex Disk</title>
-    <version>1.0.0.3</version>
+    <version>1.0.0.4</version>
     <authors>yandex</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Yandex.Disk is a cloud storage created by Yandex.</summary>
@@ -19,7 +19,7 @@
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <releaseNotes>Fix installation error.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

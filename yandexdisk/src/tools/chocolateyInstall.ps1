@@ -10,15 +10,17 @@ try { #error handling is only necessary if you need to do anything in addition t
     $chocTempDir = Join-Path $env:TEMP "chocolatey"
     $tempDir = Join-Path $chocTempDir "$packageName"
     if (![System.IO.Directory]::Exists($tempDir)) {[System.IO.Directory]::CreateDirectory($tempDir)}
-	$indexFile = Join-Path $tempDir "$($packageName).html"
 	
+	$indexFile = Join-Path $tempDir "$($packageName).html"
 	Get-ChocolateyWebFile "$packageName" "$indexFile" "$url"
 	write-host "[$packageName] Trying to find a link to a '.exe' file."
     $contentIndexFile = Get-Content "$indexFile"
-	$temp = $contentIndexFile -match '<a.*?href=\"(http[s]?://downloader\.disk.*?)\"'
+	$temp = $contentIndexFile -match '<a[^>]href="(http[s]?://downloader\.disk\.[^"]+?)"'
+	
 	if($matches[1]) {
-		write-host "[$packageName] Link is found."
-		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$matches[1]"  -validExitCodes $validExitCodes
+		$downloadeUrl = $matches[1];
+		write-host "[$packageName] Link is found. $downloadeUrl"
+		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$downloadeUrl"  -validExitCodes $validExitCodes
 	} else {
 		write-host "[$packageName] Link is not found."
 		throw
