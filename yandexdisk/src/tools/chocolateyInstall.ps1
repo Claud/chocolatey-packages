@@ -15,9 +15,8 @@ try { #error handling is only necessary if you need to do anything in addition t
 	Get-ChocolateyWebFile "$packageName" "$indexFile" "$url"
 	write-host "[$packageName] Trying to find a link to a '.exe' file."
     $contentIndexFile = Get-Content "$indexFile"
-	$temp = $contentIndexFile -match '<a[^>]href="(http[s]?://downloader\.disk\.[^"]+?)"'
 	
-	if($matches[1]) {
+	if("$contentIndexFile" -match '<a[^>]href="(http[s]?://downloader\.disk\.[^"]+?)"') {
 		$downloadeUrl = $matches[1];
 		write-host "[$packageName] Link is found. $downloadeUrl"
 		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$downloadeUrl"  -validExitCodes $validExitCodes
