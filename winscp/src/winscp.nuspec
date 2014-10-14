@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+  <metadata>
+    <id>winscp</id>
+    <title>WinSCP</title>
+    <version>5.5.5</version>
+    <authors>Martin Přikryl</authors>
+    <owners>Shirayev Andrey</owners>
+    <description>WinSCP is an open source free SFTP client, SCP client, FTPS client and FTP client for Windows. Its main function is file transfer between a local and a remote computer. Beyond this, WinSCP offers scripting and basic file manager functionality.
+    </description>
+    <summary>WinSCP is an open source free SFTP client, SCP client, FTPS client and FTP client for Windows.</summary>
+    <projectUrl>http://winscp.net/eng/index.php</projectUrl>
+    <tags>scp sftp ftp</tags>
+    <licenseUrl>http://winscp.net/eng/docs/license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <iconUrl>http://winscp.net/eng/images/logo.gif</iconUrl>
+    <!--<dependencies>
+      <dependency id="" version="" />
+    </dependencies>-->
+    <releaseNotes>Removed working files</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

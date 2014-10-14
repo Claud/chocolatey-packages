@@ -13,6 +13,7 @@ try { #error handling is only necessary if you need to do anything in addition t
 	Get-ChocolateyWebFile "$packageName" "$indexFile" "$url"
 	
 	write-host "[$packageName] Trying to find a link to a ngrok."
+	
     $contentIndexFile = Get-Content "$indexFile"
 	if("$contentIndexFile" -match '<tr[^>]+?id="dl-windows-386">(?:.|\s)*?<a[^>]+?href="(http[s]?:\/\/api\.equinox\.io[^"]+?)"') {
 		$downloadeUrl = $matches[1]
@@ -24,7 +25,7 @@ try { #error handling is only necessary if you need to do anything in addition t
 		write-host "[$packageName] Link is not found."
 		throw
 	}
-    
+	
     Write-ChocolateySuccess "$packageName"
 } catch {
     Write-ChocolateyFailure "$packageName" "$($_.Exception.Message)"
