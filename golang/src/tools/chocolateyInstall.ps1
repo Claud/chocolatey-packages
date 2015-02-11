@@ -1,5 +1,5 @@
 $packageName = 'golang'
-$version = '1.3.3'
+$version = '1.4'
 $url = 'https://storage.googleapis.com/golang/go' + $version + '.windows-386.zip'
 $url64 = 'https://storage.googleapis.com/golang/go' + $version + '.windows-amd64.zip'
 $validExitCodes = @(0)
@@ -13,7 +13,10 @@ try {
     } else {
         $curentUrl = $url
     }
-
+    
+    if (Test-Path $goLangRoot) {
+        Remove-Item "$goLangRoot" -Recurse
+    }
     Install-ChocolateyZipPackage "$packageName" "$curentUrl" "$binRoot"
     
     Install-ChocolateyEnvironmentVariable 'GOROOT' "$goLangRoot" Machine

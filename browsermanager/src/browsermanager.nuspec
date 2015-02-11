@@ -2,13 +2,16 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>browsermanager</id>
-    <title>Менеджер браузеров</title>
-    <version>1.3.0.1</version>
+    <title>Менеджер браузеров (Browser Manager))</title>
+    <version>1.3.0.3</version>
     <authors>yandex</authors>
     <owners>Shirayev Andrey</owners>
-    <summary>Оберегает настройки ваших браузеров.</summary>
+    <summary>Оберегает настройки ваших браузеров. (Protects your browser settings.)</summary>
     <description>Некоторые программы меняют настройки браузеров без ведома пользователей.
-    Менеджер отслеживает такие попытки и помогает вернуть всё как было.</description>
+    Менеджер отслеживает такие попытки и помогает вернуть всё как было.
+    
+    Protects your browser settings.
+    </description>
     <projectUrl>http://bm.yandex.ru/</projectUrl>
     <tags>browsermanager, safe</tags>
     <copyright>yandex.ru</copyright>
@@ -18,7 +21,10 @@
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes></releaseNotes>
+    <releaseNotes>
+    * Fix url for download.
+    * Add descriptions.
+    </releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

@@ -1,1 +1,6 @@
-Write-Host "No work to do, all self contained during base uninstall."
+$binRoot = Get-BinRoot
+$goLangRoot = join-path $binRoot "go"
+
+if (Test-Path $goLangRoot) {
+    Remove-Item "$goLangRoot" -Recurse
+}

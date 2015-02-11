@@ -2,7 +2,7 @@
 
 $packageName = 'yandexdisk' # arbitrary name for the package, used in messages
 $installerType = 'exe' #only one of these: exe, msi, msu
-$url = 'http://disk.yandex.ru/download/YandexDiskSetupPack.exe/' # download url
+$url = 'https://disk.yandex.ru/download/link' # download url
 $silentArgs = '/silent' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
@@ -15,13 +15,13 @@ try { #error handling is only necessary if you need to do anything in addition t
 	Get-ChocolateyWebFile "$packageName" "$indexFile" "$url"
 	write-host "[$packageName] Trying to find a link to a '.exe' file."
     $contentIndexFile = Get-Content "$indexFile"
-	
-	if("$contentIndexFile" -match '<a[^>]href="(http[s]?://downloader\.disk\.[^"]+?)"') {
+    
+	if("$contentIndexFile" -match '"YandexDiskSetupRu.exe"\s*:\s*"(http[s]?://downloader\.[^"]+?)"') {
 		$downloadeUrl = $matches[1];
 		write-host "[$packageName] Link is found. $downloadeUrl"
 		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$downloadeUrl"  -validExitCodes $validExitCodes
 	} else {
-		write-host "[$packageName] Link is not found."
+        write-host "[$packageName] Link is not found."
 		throw
 	}
     

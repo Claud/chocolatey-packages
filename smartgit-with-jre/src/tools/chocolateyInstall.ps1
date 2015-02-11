@@ -2,7 +2,7 @@
 
 $packageName = 'smartgit-with-jre' # arbitrary name for the package, used in messages
 $installerType = 'exe' #only one of these: exe, msi, msu
-$url = 'http://www.syntevo.com/download/smartgithg/smartgithg-win32-setup-jre-6_0_2.zip' # download url
+$url = 'http://www.syntevo.com/download/smartgit/smartgit-win32-setup-jre-6_5_1.zip' # download url
 $silentArgs = '/verysilent /norestart' # "/s /S /q /Q /quiet /silent /SILENT /VERYSILENT" # try any of these to get the silent installer #msi is always /quiet
 $validExitCodes = @(0) #please insert other valid exit codes here, exit codes for ms http://msdn.microsoft.com/en-us/library/aa368542(VS.85).aspx
 
