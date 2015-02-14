@@ -1,5 +1,5 @@
 $packageName = 'golang'
-$version = '1.4'
+$version = '1.4.1'
 $url = 'https://storage.googleapis.com/golang/go' + $version + '.windows-386.zip'
 $url64 = 'https://storage.googleapis.com/golang/go' + $version + '.windows-amd64.zip'
 $validExitCodes = @(0)
