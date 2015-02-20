@@ -13,7 +13,7 @@
     <copyright>Vaclav Slavik</copyright>
     <licenseUrl>https://github.com/vslavik/poedit/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>https://pbs.twimg.com/profile_images/457878756229926912/UrJvoT7L_bigger.jpeg</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/vslavik/poedit/0d81dcc6757fa217c1fd3ee3a05481bf1f86e562/artwork/linux/appicon/256x256/apps/poedit.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
