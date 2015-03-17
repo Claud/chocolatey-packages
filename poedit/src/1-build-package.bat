@@ -24,7 +24,8 @@ if exist "%BUILD_DIR%" (
 )
 
 rem  Create package.
-call cpack "-OutputDirectory %BUILD_DIR%"
+call cpack -y
+move "%SRC_DIR%\*.nupkg" "%BUILD_DIR%"
 
 if not "%1" == "1" (
 	pause

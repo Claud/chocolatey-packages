@@ -3,7 +3,7 @@
   <metadata>
     <id>winscp</id>
     <title>WinSCP</title>
-    <version>5.5.6</version>
+    <version>5.7</version>
     <authors>Martin Přikryl</authors>
     <owners>Shirayev Andrey</owners>
     <description>WinSCP is an open source free SFTP client, SCP client, FTPS client and FTP client for Windows. Its main function is file transfer between a local and a remote computer. Beyond this, WinSCP offers scripting and basic file manager functionality.
@@ -13,11 +13,11 @@
     <tags>scp sftp ftp</tags>
     <licenseUrl>http://winscp.net/eng/docs/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <iconUrl>http://winscp.net/eng/images/logo.gif</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/TomOne/various/fdfe5b43116a465610795c1f0cf18c87713ad2d4/winscp.png</iconUrl>
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes>http://winscp.net/eng/docs/history#5.5.6</releaseNotes>
+    <releaseNotes>http://winscp.net/eng/docs/history#5.7</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

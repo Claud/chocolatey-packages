@@ -8,7 +8,7 @@ rem -------------------------------------------------------------
 
 rem  Get package name.
 cd ..\
-for %%a in (".") do set CURRENT_DIR_NAME=%%~nxa
+for %%a in (".") do set CURRENT_DIR_NAME=%%~na
 cd ./src
 
 echo ===== Push "%CURRENT_DIR_NAME%" package ====
@@ -19,7 +19,7 @@ set "BUILD_DIR=..\build\%PACKAGE_NANE%"
 
 cd %BUILD_DIR%
 
-call cpush %PACKAGE_NANE%.*.nupkg
+call cpush -y
 
 if not "%1" == "1" (
 	pause

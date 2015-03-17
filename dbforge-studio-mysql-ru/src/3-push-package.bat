@@ -19,7 +19,7 @@ set "BUILD_DIR=..\build\%PACKAGE_NANE%"
 
 cd %BUILD_DIR%
 
-call cpush %PACKAGE_NANE%.*.nupkg
+call cpush -y
 
 if not "%1" == "1" (
 	pause
