@@ -1,5 +1,5 @@
 ﻿$packageName = 'winscp'
-$verisonNumber = '570'
+$verisonNumber = '572'
 $url = 'http://prdownloads.sourceforge.net/winscp/winscp' + $verisonNumber + 'setup.exe'
 $language = (Get-Culture).TwoLetterISOLanguageName.ToLower()
 $args = "/VERYSILENT /LANG=$language"

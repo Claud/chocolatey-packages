@@ -3,7 +3,7 @@
   <metadata>
     <id>winscp</id>
     <title>WinSCP</title>
-    <version>5.7</version>
+    <version>5.7.2</version>
     <authors>Martin Přikryl</authors>
     <owners>Shirayev Andrey</owners>
     <description>WinSCP is an open source free SFTP client, SCP client, FTPS client and FTP client for Windows. Its main function is file transfer between a local and a remote computer. Beyond this, WinSCP offers scripting and basic file manager functionality.
