@@ -1,6 +1,6 @@
 ﻿$packageName = 'poedit'
 $installerType = 'exe'
-$url = 'http://poedit.net/dl/Poedit-1.7.4-setup.exe'
+$url = 'https://poedit.r.worldssl.net/Poedit-1.7.6-setup.exe'
 $silentArgs = '/verysilent /norestart'
 $validExitCodes = @(0)
 
