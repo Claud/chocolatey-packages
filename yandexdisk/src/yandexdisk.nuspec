@@ -3,7 +3,7 @@
   <metadata>
     <id>yandexdisk</id>
     <title>Yandex Disk</title>
-    <version>1.0.0.6</version>
+    <version>1.0.0.7</version>
     <authors>yandex</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Yandex.Disk is a cloud storage created by Yandex.</summary>
@@ -19,7 +19,7 @@
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes>Fix url for download.</releaseNotes>
+    <releaseNotes>Fix https://github.com/Claud/chocolatey-packages/issues/3</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />

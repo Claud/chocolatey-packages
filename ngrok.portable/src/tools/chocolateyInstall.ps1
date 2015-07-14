@@ -15,7 +15,7 @@ try { #error handling is only necessary if you need to do anything in addition t
 	write-host "[$packageName] Trying to find a link to a ngrok."
 	
     $contentIndexFile = Get-Content "$indexFile"
-	if("$contentIndexFile" -match '<tr[^>]+?id="dl-windows-386">(?:.|\s)*?<a[^>]+?href="(http[s]?:\/\/api\.equinox\.io[^"]+?)"') {
+	if("$contentIndexFile" -match '<tr[^>]+?id="dl-windows-386">(?:.|\s)*?<a[^>]+?href="(http[s]?:\/\/dl\.ngrok\.com[^"]+?)"') {
 		$downloadeUrl = $matches[1]
 		$downloadeUrl = $downloadeUrl.Replace("&amp;","&") 
 		write-host "[$packageName] Link is found. $downloadeUrl"

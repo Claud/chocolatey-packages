@@ -16,7 +16,7 @@ try { #error handling is only necessary if you need to do anything in addition t
 	write-host "[$packageName] Trying to find a link to a '.exe' file."
     $contentIndexFile = Get-Content "$indexFile"
     
-	if("$contentIndexFile" -match '"YandexDiskSetupRu.exe"\s*:\s*"(http[s]?://downloader\.[^"]+?)"') {
+	if("$contentIndexFile" -match '"YandexDiskSetupPackRu.exe"\s*:\s*"(http[s]?://downloader\.[^"]+?)"') {
 		$downloadeUrl = $matches[1];
 		write-host "[$packageName] Link is found. $downloadeUrl"
 		Install-ChocolateyPackage "$packageName" "$installerType" "$silentArgs" "$downloadeUrl"  -validExitCodes $validExitCodes
