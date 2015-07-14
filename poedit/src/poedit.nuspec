@@ -3,7 +3,7 @@
   <metadata>
     <id>poedit</id>
     <title>Poedit</title>
-    <version>1.7.6</version>
+    <version>1.8.2</version>
     <authors>Vaclav Slavik</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Poedit offers the best way to translate apps and sites (that use gettext).</summary>
