@@ -1,6 +1,6 @@
 ﻿$packageName = 'smartgit-with-jre'
 $installerType = 'exe'
-$url = 'http://www.syntevo.com/downloads/smartgit/smartgit-win32-setup-jre-6_5_6.zip'
+$url = 'http://www.syntevo.com/static/smart/download/smartgit/smartgit-win32-setup-jre-7_1_1.zip'
 $silentArgs = '/verysilent /norestart'
 $validExitCodes = @(0)
 

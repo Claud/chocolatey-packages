@@ -3,15 +3,16 @@
   <metadata>
     <id>poedit</id>
     <title>Poedit</title>
-    <version>1.8.2</version>
+    <version>1.8.7</version>
     <authors>Vaclav Slavik</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Poedit offers the best way to translate apps and sites (that use gettext).</summary>
     <description>Poedit offers the best way to translate apps and sites (that use gettext). Thanks to its distraction-free approach, you’ll translate faster and easier with it.</description>
     <projectUrl>http://poedit.net/</projectUrl>
-    <tags>poedit gettext</tags>
+    <tags>admin poedit gettext</tags>
     <copyright>Vaclav Slavik</copyright>
     <licenseUrl>https://github.com/vslavik/poedit/blob/master/COPYING</licenseUrl>
+    <packageSourceUrl>https://github.com/Claud/chocolatey-packages</packageSourceUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <iconUrl>https://cdn.rawgit.com/vslavik/poedit/0d81dcc6757fa217c1fd3ee3a05481bf1f86e562/artwork/linux/appicon/256x256/apps/poedit.png</iconUrl>
     <!--<dependencies>

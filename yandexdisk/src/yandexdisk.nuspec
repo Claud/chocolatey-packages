@@ -3,7 +3,7 @@
   <metadata>
     <id>yandexdisk</id>
     <title>Yandex Disk</title>
-    <version>1.0.0.7</version>
+    <version>1.0.0.8</version>
     <authors>yandex</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Yandex.Disk is a cloud storage created by Yandex.</summary>
@@ -11,7 +11,8 @@
     Яндекс.Диск — облачный сервис, принадлежащий компании Яндекс, позволяющий пользователям хранить свои данные на серверах в «облаке» и передавать их другим пользователям в Интернете.
     </description>
     <projectUrl>https://disk.yandex.ru</projectUrl>
-    <tags>yandexdisk, file storage, backup</tags>
+    <packageSourceUrl>https://github.com/Claud/chocolatey-packages</packageSourceUrl>
+    <tags>admin yandexdisk file storage backup</tags>
     <copyright>yandex.ru</copyright>
     <licenseUrl>http://legal.yandex.ru/desktop_software_agreement/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

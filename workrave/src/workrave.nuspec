@@ -3,7 +3,7 @@
   <metadata>
     <id>workrave</id>
     <title>workrave</title>
-    <version>1.10.1.5</version>
+    <version>1.10.1.6</version>
     <authors>Raymond Penners, Rob Caelers</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Workrave is a program that assists in the recovery and prevention of Repetitive Strain Injury (RSI)</summary>
@@ -12,7 +12,8 @@
 	Please refer to the feature comparison for a complete list of features, and how the program performs with respect to other programs on the market. 
 	The program runs on GNU/Linux and Microsoft Windows. </description>
     <projectUrl>http://www.workrave.org/</projectUrl>
-    <tags>workrave, work, health, eya</tags>
+    <tags>admin workrave work health eya</tags>
+    <packageSourceUrl>https://github.com/Claud/chocolatey-packages</packageSourceUrl>
     <copyright></copyright>
     <licenseUrl>http://www.gnu.org/licenses/gpl-3.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

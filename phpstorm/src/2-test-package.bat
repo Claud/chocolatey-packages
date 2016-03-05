@@ -18,7 +18,7 @@ set "SRC_DIR=%~dp0"
 set "BUILD_DIR=..\build\%PACKAGE_NANE%"
 
 cd %BUILD_DIR%
-call cinst -fvy %PACKAGE_NANE% -source %CD%
+call cinst -fvy %PACKAGE_NANE% -s %CD% --pre
 
 if not "%1" == "1" (
 	pause

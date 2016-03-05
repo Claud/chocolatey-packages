@@ -3,13 +3,14 @@
   <metadata>
     <id>smartgit-with-jre</id>
     <title>SmartGit/Hg (with JRE)</title>
-    <version>6.5.6</version>
+    <version>7.1.1</version>
     <authors>syntevo</authors>
     <owners>Shirayev Andrey</owners>
     <summary>SmartGit/Hg</summary>
     <description>SmartGit/Hg is a client for Git and Mercurial.</description>
     <projectUrl>http://www.syntevo.com/smartgit/</projectUrl>
-    <tags>smartgit git github hg mercurial dvcs</tags>
+    <packageSourceUrl>https://github.com/Claud/chocolatey-packages</packageSourceUrl>
+    <tags>admin smartgit git github hg mercurial dvcs</tags>
     <copyright>syntevo GmbH</copyright>
     <licenseUrl>http://www.syntevo.com/smartgithg/license.html</licenseUrl>
     <iconUrl>https://raw.github.com/sebnilsson/ChocolateyPackages/master/SmartGit/logo.png</iconUrl>
