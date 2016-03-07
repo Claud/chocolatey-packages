@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
   <metadata>
     <id>workrave</id>
-    <title>workrave</title>
+    <title>Workrave</title>
     <version>1.10.1.6</version>
     <authors>Raymond Penners, Rob Caelers</authors>
     <owners>Shirayev Andrey</owners>
