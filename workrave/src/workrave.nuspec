@@ -3,7 +3,7 @@
   <metadata>
     <id>workrave</id>
     <title>Workrave</title>
-    <version>1.10.1.6</version>
+    <version>1.10.45</version>
     <authors>Raymond Penners, Rob Caelers</authors>
     <owners>Shirayev Andrey</owners>
     <summary>Workrave is a program that assists in the recovery and prevention of Repetitive Strain Injury (RSI)</summary>
@@ -21,7 +21,7 @@
     <!--<dependencies>
       <dependency id="" version="" />
     </dependencies>-->
-    <releaseNotes>Fix source url</releaseNotes>
+    <releaseNotes>Updated version to 1.10.45, including move to github.</releaseNotes>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
